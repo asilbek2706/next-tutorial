@@ -5,4 +5,49 @@
 .navbar-1 {
     display: flex;
     gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-1 button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: 900;
+}
+
+.navbar-1 button:hover {
+    color: green;
+    background-color: rgb(201, 243, 194);
+    transition: all 0.5s ease-in-out;
+}
+
+.footer-text {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: 900;
+    margin-top: auto;
+}
+
+.text-red {
+    color: red;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    font-weight: 900;
+    margin: 20px;
 }

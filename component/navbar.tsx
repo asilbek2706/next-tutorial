@@ -10,6 +10,7 @@ export default function Navbar() {
             <button onClick={() => router.push('/')}>Bosh sahifa</button>
             <button onClick={() => router.push('/about')}>Men haqimda</button>
             <button onClick={() => router.push('/contact')}>Bog'lanish</button>
+            <button onClick={() => router.push('/posts')}>Post</button>
         </div>
     )
 }

@@ -13,9 +13,9 @@ export default function AboutLayout({
 }>) {
     return (
         <section>
-            <p>Start About</p>
+            <p className='text-red'>Start About</p>
             {children}
-            <p>End About</p>
+            <p className='text-red'>End About</p>
         </section>
     )
 }

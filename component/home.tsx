@@ -4,6 +4,7 @@ import { PostType } from '@/interface'
 import axios from 'axios'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
+import Text from '@/component/text/text'
 
 export default function Home() {
     const [posts, setPosts] = useState<PostType[]>([])
@@ -35,7 +36,7 @@ export default function Home() {
                           <Link href={`/posts/${post.id}`}>{post.title}</Link>
                       </div>
                   ))}
-            <div>Home</div>
+            <Text text='Home page' />
         </>
     )
 }

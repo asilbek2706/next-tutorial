@@ -3,6 +3,7 @@ import './globals.css'
 import { ReactNode, use } from 'react'
 import { Metadata } from 'next'
 import Navbar from '@/component/navbar'
+import Provider from './provider'
 
 const fira_code = Fira_Code({ subsets: ['latin'], weight: '400' })
 
@@ -19,9 +20,11 @@ export default function RootLayout({
     return (
         <html lang='uz' className={fira_code.className}>
             <body className='min-h-full flex flex-col'>
-                <Navbar />
-                {children}
-                <p className='footer-text'>Footer</p>
+                <Provider>
+                    <Navbar />
+                    {children}
+                    <p className='footer-text'>Footer</p>
+                </Provider>
             </body>
         </html>
     )

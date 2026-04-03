@@ -1,17 +1,13 @@
 import Posts from '@/component/posts'
 import { PostType } from '@/interface'
 import axios from 'axios'
-import Link from 'next/link'
+// import dynamic from 'next/dynamic'
 import { notFound } from 'next/navigation'
+
+// const PostComponent = dynamic(() => import('@/component/posts'), { ssr: false })
 
 async function getData() {
     const { data } = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
-
-    // await new Promise((resolve) =>
-    //     setTimeout(() => {
-    //         resolve('')
-    //     }, 2000)
-    // )
 
     return data
 }
